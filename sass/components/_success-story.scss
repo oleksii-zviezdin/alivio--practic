@@ -1,0 +1,58 @@
+.success-story {
+    position: relative;
+    background-color: var(--bg-secondary-color);
+    max-width: 1920px;
+    height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 230px;
+    padding-bottom: 175px;
+    padding-left: 205px;
+    padding-right: 205px;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        display: block;
+        width: 580px;
+
+        @extend %typography;
+
+        font-family: 'Georgia';
+        font-size: 50px;
+        line-height: 1.58;
+
+        color: var(--white-text-color);
+    }
+
+    &__description {
+        display: block;
+        width: 550px;
+
+        margin-top: 35px;
+        margin-bottom: 55px;
+
+        @extend %typography;
+        
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.56;
+
+        color: var(--white-text-color);
+    }
+
+    &__button {
+        @extend %button;
+        @extend %typography;
+    
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}

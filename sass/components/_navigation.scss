@@ -1,0 +1,30 @@
+.nav-container {
+    display: flex;
+    gap: 170px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 70px;
+}
+
+.nav__items {
+    display: block;
+    height: 100%;
+}
+
+.nav__link {
+    display: block;
+    height: 100%;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @extend %typography;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: var(--header-text-color);
+}

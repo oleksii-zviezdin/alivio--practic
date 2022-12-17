@@ -1,0 +1,41 @@
+.thumb {
+    width: 100%;
+
+    &__picture {        
+        border-radius: 12px;
+    }
+
+    &__video {
+        min-width: 896px;
+        height: auto;
+        
+        border-radius: 16px;
+    }
+
+    &__title {
+        @extend %typography;
+        
+        font-family: 'Lora';
+        font-size: 30px;
+        line-height: 1.5;
+
+        text-align: center;
+
+        color: var(--headline-list-color);
+    }
+
+    &__description {
+        width: 385px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        @extend %typography;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+
+        color: var(--main-text-color);
+    }
+    
+}

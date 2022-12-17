@@ -1,0 +1,20 @@
+// reset style
+@import './base/reset';
+@import './base/placeholder';
+@import './base/thumb';
+
+// utils
+@import './utils/variables';
+@import './utils/normalize';
+
+// components
+@import './components/header';
+@import './components/navigation';
+@import './components/logo';
+@import './components/nav-container';
+@import './components/navigation';
+@import './components/sing-in';
+@import './components/hero-section';
+@import './components/HowItWorks';
+@import './components/success-story'
+

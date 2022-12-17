@@ -1,0 +1,60 @@
+.hero {
+    position: relative;
+    background-color: var(--bg-primary-color);
+    max-width: 1920px;
+    height: auto;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 175px;
+    padding-bottom: 335px;
+    padding-left: 275px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/hero_bg-@1x-1920.jpg);
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        & {
+          background-image: url(../images/hero_bg-@2x-3840.jpg);
+        }
+    }
+
+    &__container {
+        width: 440px;
+    }
+
+    &__title {
+        @extend %typography;
+        
+        font-family: 'Lora';
+        font-size: 65px;
+        line-height: 1.14;
+    
+        color: var(--green-text-color); 
+    }
+
+    &__description {    
+        width: 420px;
+        
+        margin-top: 30px;
+        margin-bottom: 50px;
+    
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.55;
+    
+        color: var( --hero-text-kolor);
+    }
+
+    &__button {
+        @extend %button;
+        @extend %typography;
+    
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}

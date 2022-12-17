@@ -1,0 +1,27 @@
+.sing-in {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sing-in__text {
+    @extend %typography;
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: #000000;
+}
+
+.sing-in__button {
+    @extend %button;
+    @extend %typography;
+
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
