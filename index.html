@@ -146,24 +146,41 @@
         </section>
 
         <!-- our product section -->
-        <section class="our-product-section">
-            <div class="our-product-container">
-                <div class="our-product-article">
-                    <h2>Our product</h2>
-                    <p>You tell us your stress, We make your diary</p>
-                    <p>Everyone experiences it, and in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
-                    <button type="button">Find Your Way</button>
+        <section class="our-product">
+            <div class="our-product__section">
+
+                <div class="our-product__container">
+                    <h2 class="our-product__title">Our product</h2>
+                    <p class="our-product__description our-product__description--green">You tell us your stress, We make your diary</p>
+                    <p class="our-product__description">Everyone experiences it, and in different ways. <br> Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+                    <button class="our-product__button" type="button">Find Your Way</button>
                 </div>
-                <div class="our-product-thumb">
-                    <img src="" alt="smiling woman">
+
+                <div class="our-product__thumb">
+                    <img 
+                        srcset="./images/costum_big-@1x-640.jpg 1x, ./images/costum_big-@2x-1278.jpg 2x"
+                        src="./images/costum_big-@1x-640.jpg"
+                        alt="smiling woman"
+                        width="640"
+                        height="574"
+                        loading="lazy">
+
                     <div class="costumizedFor">
-                        <h3>Customized For</h3>
-                        <img src="" alt="smiling woman">
-                        <p>Mikayla</p>
-                        <p>Your custom contents</p>
-                        <ul>
-                            <li>Understand Your Stress</li>
-                            <li>Anger Management</li>
+                        <h3 class="costumizedFor__title">Customized For</h3>
+                        <img
+                            class="costumizedFor__picture" 
+                            srcset="./images/costum_small-@1x-58.jpg 1x, ./images/costum_small-@1x-116.jpg 2x"
+                            src="./images/costum_small-@1x-58.jpg"
+                            alt="smiling woman"
+                            width="58"
+                            height="58"
+                            loading="lazy"
+                            >
+                        <p class="costumizedFor__description">Mikayla</p>
+                        <p class="costumizedFor__description costumizedFor__description--list">Your custom contents</p>
+                        <ul class="costumizedFor__list">
+                            <li class="costumizedFor__items">Understand Your Stress</li>
+                            <li class="costumizedFor__items">Anger Management</li>
                         </ul>
                     </div>
                 </div>
@@ -171,14 +188,14 @@
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="">Alivio</a></li>
-                <li><a href="">Why Alivio</a></li>
-                <li><a href="">Solutions</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Pricing</a></li>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__items"><a class="footer__link footer__link--logo" href="./index.html">Alivio</a></li>
+                <li class="footer__items"><a class="footer__link" href="">Why Alivio</a></li>
+                <li class="footer__items"><a class="footer__link" href="">Solutions</a></li>
+                <li class="footer__items"><a class="footer__link" href="">Community</a></li>
+                <li class="footer__items"><a class="footer__link" href="">Pricing</a></li>
             </ul>
         </nav>
     </footer>

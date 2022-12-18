@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 95px;
+    padding-bottom: 145px;
+    padding-left: 275px;
+
+    background-color: var(--bg-secondary-color);
+
+    &__link {
+        display: block;
+
+        @extend %typography;
+        
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 1.2;
+
+        color: var(--white-text-color);
+
+        &--logo {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 1.38;
+        }
+    }
+
+    &__items:not(:last-child) {
+        margin-bottom: 60px;
+    }
+}

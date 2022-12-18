@@ -1,0 +1,105 @@
+.costumizedFor {
+    position: absolute;
+    left: -60px;
+    bottom: -70px;
+
+    // outline: 2px solid red;
+    width: 295px;
+    // height: 290px;
+    
+    padding-top: 22px;
+    padding-bottom: 30px;
+    // padding-right: 96px;
+    // padding-left: 96px;
+
+    background-color: #fff;
+
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+
+    // &::after {
+    //     position: absolute;
+    //     top: 55px;;
+    //     left: 90px;
+    //     display: block;
+
+    //     content: "";
+    //     width: 110px;
+    //     height: 1px;
+        
+    //     border-bottom: 1px solid #000;
+    // }
+
+    &__title {
+        position: relative;
+        margin-bottom: 20px;
+
+        @extend %typography;
+        
+        font-weight: 600;
+        font-size: 14.49px;
+        line-height: 1.59;
+
+        text-align: center;
+
+        color: var(--costomizedFor-text-color);
+
+        // border-bottom: 1px solid #000000;
+
+        &::after {
+            position: absolute;
+            top: 30px;;
+            left: 92px;
+            display: block;
+
+            content: " ";
+            width: 110px;
+            height: 1px;
+
+            color: var(--costomizedFor-text-color);
+            border-bottom: 1px solid var(--costomizedFor-text-color);
+        }
+    }
+
+    &__picture {
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__description {
+        margin-top: 10px;
+        @extend %typography;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.67;
+        
+        text-align: center;
+
+        color: var(--costomizedFor-text-color);
+
+        &--list {
+            font-family: 'Georgia';
+            font-weight: 700;
+            font-size: 15.9292px;
+            line-height: 1.57;
+        }
+    }
+
+    &__list {
+        list-style: disc;
+        padding: 0 0 0 75px;
+    }
+
+    &__items {
+        margin-top: 16px;
+
+        @extend %typography;
+
+        font-weight: 400;
+        font-size: 10.6195px;
+        line-height: 1.62;
+
+        color: var(--costomizedFor-text-color);
+    }
+}

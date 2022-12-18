@@ -1,0 +1,78 @@
+.our-product {
+    padding-top: 120px;
+    padding-bottom: 170px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__thumb {
+        position: relative;
+    }
+
+    &__section {  
+        position: relative;
+        
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 85px;
+
+        padding-left: 60px;
+        padding-bottom: 75px;
+    }
+
+    // &__container {
+    // }
+
+    &__title {
+        display: block;
+        
+        @extend %typography;
+
+        margin-bottom: 10px;
+
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 1.56;
+
+        color: var(--main-text-color);
+    }
+
+    &__description {
+        display: block;
+        @extend %typography;
+
+        width: 530px;
+        
+        margin-bottom: 40px;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.55;
+        
+        color: var(--hero-text-kolor);
+
+        &--green {
+            width: 585px;
+
+            margin-bottom: 20px;
+
+            font-family: 'Georgia';
+
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1.58;
+
+            color: var(--green-text-color);
+        }
+    }
+
+    &__button {
+        @extend %typography;
+        @extend %button;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
