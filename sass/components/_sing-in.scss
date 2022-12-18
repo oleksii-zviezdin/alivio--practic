@@ -24,4 +24,9 @@
     padding-bottom: 13px;
     padding-right: 50px;
     padding-left: 50px;
+
+    &:hover,
+    &:focus {     
+        box-shadow: 2px 2px 10px var(--button-color);
+    }
 }

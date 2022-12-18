@@ -1,3 +1,13 @@
+.icon-logo { 
+    // scale: 1;
+    transition: scale 100ms;
+
+    &:hover,
+    &:focus {
+        scale: 1.1;
+    }
+}
+
 .logo__icon {
     display: block;
     

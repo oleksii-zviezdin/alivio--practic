@@ -18,6 +18,10 @@
     color: #FFFFFF;
 
     cursor: pointer;
+
+    scale: 1;
+
+    transition: box-shadow 250ms;
 }
 
 %typography {

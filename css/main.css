@@ -48,6 +48,11 @@ button {
   line-height: 1.25;
   color: #FFFFFF;
   cursor: pointer;
+  scale: 1;
+  -webkit-transition: -webkit-box-shadow 250ms;
+  transition: -webkit-box-shadow 250ms;
+  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, -webkit-box-shadow 250ms;
 }
 
 .costumizedFor__items, .costumizedFor__description, .costumizedFor__title, .our-product__button, .our-product__description, .our-product__title, .footer__link, .success-story__button, .success-story__description, .success-story__title, .HowItWorks__description, .HowItWorks__title, .hero__button, .hero__title, .sing-in__button, .sing-in__text, .nav__link, .thumb__description, .thumb__title {
@@ -387,6 +392,20 @@ summary {
   font-size: 20px;
   line-height: 1.2;
   color: var(--header-text-color);
+  -webkit-transition: scale 250ms, text-shadow 250ms;
+  transition: scale 250ms, text-shadow 250ms;
+}
+.nav__link:hover, .nav__link:focus {
+  scale: 1.05;
+  text-shadow: 2px 2px 10px lightgray;
+}
+
+.icon-logo {
+  -webkit-transition: scale 100ms;
+  transition: scale 100ms;
+}
+.icon-logo:hover, .icon-logo:focus {
+  scale: 1.1;
 }
 
 .logo__icon {
@@ -433,6 +452,12 @@ summary {
   font-size: 20px;
   line-height: 1.2;
   color: var(--header-text-color);
+  -webkit-transition: scale 250ms, text-shadow 250ms;
+  transition: scale 250ms, text-shadow 250ms;
+}
+.nav__link:hover, .nav__link:focus {
+  scale: 1.05;
+  text-shadow: 2px 2px 10px lightgray;
 }
 
 .sing-in {
@@ -460,6 +485,10 @@ summary {
   padding-bottom: 13px;
   padding-right: 50px;
   padding-left: 50px;
+}
+.sing-in__button:hover, .sing-in__button:focus {
+  -webkit-box-shadow: 2px 2px 10px var(--button-color);
+          box-shadow: 2px 2px 10px var(--button-color);
 }
 
 .hero {
@@ -505,6 +534,10 @@ summary {
   padding-bottom: 20px;
   padding-right: 50px;
   padding-left: 50px;
+}
+.hero__button:hover, .hero__button:focus {
+  -webkit-box-shadow: 2px 2px 10px var(--button-color);
+          box-shadow: 2px 2px 10px var(--button-color);
 }
 
 .HowItWorks-section {
@@ -637,6 +670,10 @@ summary {
   padding-right: 50px;
   padding-left: 50px;
 }
+.success-story__button:hover, .success-story__button:focus {
+  -webkit-box-shadow: 2px 2px 10px var(--button-color);
+          box-shadow: 2px 2px 10px var(--button-color);
+}
 
 .footer {
   padding-top: 95px;
@@ -645,16 +682,23 @@ summary {
   background-color: var(--bg-secondary-color);
 }
 .footer__link {
-  display: block;
+  display: inline-block;
+  max-width: 100%;
   font-weight: 600;
   font-size: 25px;
   line-height: 1.2;
   color: var(--white-text-color);
+  -webkit-transition: scale 250ms;
+  transition: scale 250ms;
 }
 .footer__link--logo {
   font-weight: 900;
   font-size: 40px;
   line-height: 1.38;
+}
+.footer__link:hover, .footer__link:focus {
+  scale: 1.05;
+  text-shadow: 2px 2px 10px #ffffff;
 }
 .footer__items:not(:last-child) {
   margin-bottom: 60px;
@@ -719,6 +763,10 @@ summary {
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
+}
+.our-product__button:hover, .our-product__button:focus {
+  -webkit-box-shadow: 2px 2px 10px var(--button-color);
+          box-shadow: 2px 2px 10px var(--button-color);
 }
 
 .costumizedFor {

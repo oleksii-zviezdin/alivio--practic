@@ -6,7 +6,8 @@
     background-color: var(--bg-secondary-color);
 
     &__link {
-        display: block;
+        display: inline-block;
+        max-width: 100%;
 
         @extend %typography;
         
@@ -16,10 +17,18 @@
 
         color: var(--white-text-color);
 
+        transition: scale 250ms;
+
         &--logo {
             font-weight: 900;
             font-size: 40px;
             line-height: 1.38;
+        }
+
+        &:hover,
+        &:focus {
+            scale: 1.05;
+            text-shadow: 2px 2px 10px #ffffff;
         }
     }
 
