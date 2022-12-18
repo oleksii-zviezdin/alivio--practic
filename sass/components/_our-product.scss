@@ -4,12 +4,17 @@
     margin-left: auto;
     margin-right: auto;
 
+    &__picture {        
+        min-width: 640px;
+        height: 574px;
+    }
+
     &__thumb {
         position: relative;
     }
 
     &__section {  
-        position: relative;
+        // position: relative;
         
         display: flex;
         flex-direction: row-reverse;

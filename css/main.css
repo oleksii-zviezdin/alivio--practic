@@ -666,11 +666,14 @@ summary {
   margin-left: auto;
   margin-right: auto;
 }
+.our-product__picture {
+  min-width: 640px;
+  height: 574px;
+}
 .our-product__thumb {
   position: relative;
 }
 .our-product__section {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
